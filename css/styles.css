@@ -1,37 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../img/background03.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: lighten;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(231, 172, 83);
+}
+
 .wrapper {
   height: 100vh;
-  /*This part is important for centering*/
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.title {
+.image {
+  width: 100%;
+}
+
+.image img {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  animation: fadeIn 20s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  80% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}
+
+.pic01 img {
+  position: absolute;
+  width: 280px;
+  top: 0;
+  left: 0;
+  animation: fadeIn2 6s forwards;
+}
+
+.pic03 img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: fadeIn2 14s forwards;
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  bottom: 25%;
+  left: 55%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family:fantasy;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: rgb(231, 172, 83);
+  background: transparent;
+  animation: btn 23s forwards;
+}
+
+button:hover {
+  border-bottom: 1px 
+}
+
+button i {
+  padding-left: 15px;
+  font-size: 25px;
+}
+
+@keyframes btn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  80% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+audio {
+  width: 100px;
+  height: 24px;
+  margin-top: 8px;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+@media (max-width: 699px) {
+  .pic01 img {
+    display: none;
+  }
+
+  button {
+    position: absolute;
+    top: 35%;
+    left: 60%;
+  }
+}
+
+/* .title {
   width: 21ch;
-  animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+  animation: typing 2s steps(20), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
   text-align: center;
-}
+} */
 
-
-@keyframes typing {
+/* @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
 
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
-}
-
-@media(max-width: 600px) {
- .title {
-   /* animation: none; */
- }
-}
+} */
