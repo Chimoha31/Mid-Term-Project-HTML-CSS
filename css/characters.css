@@ -10,6 +10,37 @@ body {
   box-sizing: border-box;
 }
 
+/*-----------------------
+header
+------------------------*/
+h1 {
+  text-align: center;
+}
+
+
+#header_container {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+#header_container img{
+  border: 1px solid red;
+  width: 15rem;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+  float: left;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+
+
+/*-----------------------
+body
+------------------------*/
 #container_wrapper {
   border: 1px solid green;
   display: flex;
@@ -19,15 +50,30 @@ body {
 
 #container_wrapper img {
   border: 1px solid red;
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 18rem;
 }
 
 /*-------------------
 modal
 --------------------*/
 .open, #close,
-.open02, #close02 {
+.open02, #close02,
+.open03, #close03,
+.open04, #close04,
+.open05, #close05,
+.open06, #close06,
+.open07, #close07,
+.open08, #close08,
+.open09, #close09,
+.open10, #close10,
+.open11, #close11,
+.open12, #close12,
+.open13, #close13,
+.open14, #close14,
+.open15, #close15,
+.open16, #close16,
+.open17, #close17 {
   width: 200px;
   cursor: pointer;
   border: 2px solid pink;
@@ -42,11 +88,71 @@ modal
 }
 
 #mask02 {
-  background-image: url(../img/nyankosensei02.gif);
+  background-image: url(../img/Yokaisensei.png);
+}
+#mask03 {
+  background-image: url(../img/reiko.png);
+}
+#mask04 {
+  background-image: url(../img/Natori02.png);
+}
+#mask05 {
+  background-image: url(../img/Hiiragi02.jpg);
+}
+#mask06 {
+  background-image: url(../img/Hinoe.jpg);
+}
+#mask07 {
+  background-image: url(../img/Kogitsune.jpeg);
+}
+#mask08 {
+  background-image: url(../img/Misuzu.jpg);
+}
+#mask09 {
+  background-image: url(../img/chukyu.png);
+}
+#mask10 {
+  background-image: url(../img/Cyobihige.jpg);
+}
+#mask11 {
+  background-image: url(../img/Matoba.png);
+}
+#mask12 {
+  background-image: url(../img/Tanuma02.png);
+}
+#mask13 {
+  background-image: url(../img/Taki.png);
+}
+#mask14 {
+  background-image: url(../img/Kitamoto.png);
+}
+#mask15 {
+  background-image: url(../img/Nishimura.png);
+}
+#mask16 {
+  background-image: url(../img/Toko.png);
+}
+#mask17 {
+  background-image: url(../img/Shigeru.png);
 }
 
 #mask,
-#mask02 {
+#mask02,
+#mask03,
+#mask04,
+#mask05,
+#mask06,
+#mask07,
+#mask08,
+#mask09,
+#mask10,
+#mask11,
+#mask12,
+#mask13,
+#mask14,
+#mask15,
+#mask16,
+#mask17 {
   background-color:rgba(255,255,255,0.8);
   background-blend-mode:lighten;
   animation: bgiLoop 5s linear infinite;
@@ -63,8 +169,23 @@ modal
 }
 
 #modal,
-#modal02 {
-  width: 40%;
+#modal02,
+#modal03,
+#modal04,
+#modal05,
+#modal06,
+#modal07,
+#modal08,
+#modal09,
+#modal10,
+#modal11,
+#modal12,
+#modal13,
+#modal14,
+#modal15,
+#modal16,
+#modal17 {
+  width: 30%;
   background: rgb(208, 221, 226);
   border-radius: 2rem;
   box-shadow: 0.1rem 0.1rem 0.8rem rgb(58, 57, 57);
@@ -78,18 +199,65 @@ modal
   transition: transform 0.4s;
 }
 
-#modal img {
-  width: 30em;
-  height: 35rem;
+#modal img,
+#modal02 img,
+#modal03 img,
+#modal04 img,
+#modal05 img,
+#modal06 img,
+#modal07 img,
+#modal08 img,
+#modal09 img,
+#modal10 img,
+#modal11 img,
+#modal12 img,
+#modal13 img,
+#modal14 img,
+#modal15 img,
+#modal16 img,
+#modal17 img {
+  display: block;
+  margin: 0 auto;
 }
 
+
 #mask.hidden,
-#mask02.hidden {
+#mask02.hidden, 
+#mask03.hidden,
+#mask04.hidden,
+#mask05.hidden,
+#mask06.hidden,
+#mask07.hidden,
+#mask08.hidden,
+#mask09.hidden,
+#mask10.hidden,
+#mask11.hidden,
+#mask12.hidden,
+#mask13.hidden,
+#mask14.hidden,
+#mask15.hidden,
+#mask16.hidden,
+#mask17.hidden {
   display: none;
 }
 
 #modal.hidden,
-#modal02.hidden {
+#modal02.hidden,
+#modal03.hidden,
+#modal04.hidden,
+#modal05.hidden,
+#modal06.hidden,
+#modal07.hidden,
+#modal08.hidden,
+#modal09.hidden,
+#modal10.hidden,
+#modal11.hidden,
+#modal12.hidden,
+#modal13.hidden,
+#modal14.hidden,
+#modal15.hidden,
+#modal16.hidden,
+#modal17.hidden {
   transform: translate(0, -1200px);
 }
 
@@ -110,6 +278,26 @@ modal
 
 
 
+
 @media (max-width: 699px) {
+#header_container li {
+  display: none;
+}
+
+  #modal,
+  #modal02,
+  #modal03 {
+    width: 50%;
+  }
+  
+  #modal img,
+  #modal02 img,
+  #modal03 img {
+    width: 18em;
+    height: 20rem;
+  }
+  
+  
+  
   
 }
