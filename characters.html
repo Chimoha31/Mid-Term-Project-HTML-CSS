@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/characters.css" />
-  <title>Characters</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/characters.css" />
+    <title>Characters</title>
+  </head>
+
+  <body>
+    <!----------------------
+    Before modal
+    ----------------------->
+   <div id="container_wrapper">
+    <div class="open">
+      <img src="img/nyankosensi.png" alt="">
+      <p>ニャンコ先生</p>
+    </div>
+     <div class="open02">
+      <img src="img/natsume02.gif" alt="">
+      <p>夏目たかし</p>
+    </div>
+  </div>
   
-</body>
+  
+   <!----------------------
+    After modal
+    ----------------------->
+  <div id="mask" class="hidden"></div>
+  <section id="modal" class="hidden">
+    <div>
+      <img src="img/nyankosensi.png" alt="">
+      <div>
+        <h3>ニャンコ先生</h3>
+        <p>夏目たかしの用心棒</p>
+      </div>
+    </div>
+    <div id="close" class="hidden">Close</div>
+    </section>
+
+
+
+    <div id="mask02" class="hidden"></div>
+    <section id="modal02" class="hidden">
+    <div>
+      <img src="img/natsume02.gif" alt="">
+      <div>
+        <h3>夏目たかし</h3>
+        <p>幼少期から妖怪が見える</p>
+      </div>
+    </div>
+    <div id="close02" class="hidden">Close</div>
+  </section>
+
+    <script src="js/characters.js"></script>
+  </body>
 </html>

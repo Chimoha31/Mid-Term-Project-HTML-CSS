@@ -1,0 +1,145 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+
+#container_wrapper {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#container_wrapper img {
+  border: 1px solid red;
+  width: 20rem;
+  height: 20rem;
+}
+
+#container_wrapper.open02 {
+  margin: 0;
+}
+
+/*-------------------
+modal
+--------------------*/
+.open, #close {
+  width: 200px;
+  cursor: pointer;
+  border: 2px solid pink;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 0 auto;
+}
+.open02, #close02 {
+  width: 200px;
+  cursor: pointer;
+  border: 2px solid pink;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 0 auto;
+}
+
+#mask {
+  background-image: url(../img/nyankosensi.png);
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+  animation: bgiLoop 5s linear infinite;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#mask02 {
+  background-image: url(../img/natsume02.gif);
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+  animation: bgiLoop 5s linear infinite;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@keyframes bgiLoop {
+  0% { background-position: 0 0;}
+100% { background-position: -100px 200px;}
+}
+
+#modal {
+  width: 400px;
+  background: rgb(208, 221, 226);
+  border-radius: 2rem;
+  box-shadow: 0.1rem 0.1rem 0.8rem rgb(58, 57, 57);
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right:0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+}
+#modal02 {
+  width: 400px;
+  background: rgb(208, 221, 226);
+  border-radius: 2rem;
+  box-shadow: 0.1rem 0.1rem 0.8rem rgb(58, 57, 57);
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right:0;
+  margin: 0 auto;
+  transition: transform 0.4s;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal.hidden {
+  transform: translate(0, -900px);
+}
+#mask02.hidden {
+  display: none;
+}
+
+#modal02.hidden {
+  transform: translate(0, -900px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 699px) {
+  
+}
