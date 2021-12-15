@@ -1,0 +1,34 @@
+header {
+  margin-top: 30px;
+  color: #2e99a9;
+}
+
+hr {
+  border-width: 3px;
+  border-color: #2e99a9;
+  margin: 30px 0;
+}
+
+
+
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.badge {
+  margin-left: 5px;
+}
+
+.form-group span {
+  background-color: red;
+}
+
+.form-check-inline {
+  display: inline;
+}
+
+.footer-container {
+  text-align: center;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ご利用アンケート</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/inquiry.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="col-sm-6">
+          <h1>Natsume Japan 2021 / お問い合わせ Inquiry</h1>
+        </div>
+        <div class="col-sm-6 text-right">
+          <a href="index.html">Return Home</a>
+        </div>
+      </div>
+    </header>
+  </div>
+    
+  <hr />
+
+  <div class="container">
+    <form action="" method="post" class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <p>AnimeJapan 2021に関するお問い合わせにつきましては、下記必須項目をご記入ください。
+          また、内容によっては回答できないもの／回答に日数を要するものもございます。予めご了承ください。 <br />
+          In the case of inquiry, please input necessary items and click the submit button.
+          Some enquiries might not be answered.</p>
+
+          <hr />
+
+          <p>▼ Inquiries by phone <br />
+            TEL 050-2018-3934 <br />
+            Business hours: Weekdays 10: 00-18: 00 <br />
+            * Excluding weekends and holidays and our holidays.<br />
+            * Call charges will be borne by the customer.<br />
+             
+            Depending on the content of your inquiry, we may not be able to answer or it may take some time.</p>
+
+            <br />
+
+            <p>▼ Inquiries by email <br />
+              https://stagecrowd.live/s/live000/form/inquiry?ima=3449 <br />
+              Business hours: Weekdays 10: 00-18: 00 <br />
+              * Excluding weekends and holidays and our holidays.<br />
+              We will reply to your inquiry by e-mail to the registered address. <br />
+              If you are taking measures against junk mail, please register as a domain to receive "@ online.anime-japan.jp". <br />
+              For inquiries received on the day of delivery, there is a possibility that the reply will be after the start or end of delivery. Please note.</p>
+
+              <hr />
+        
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">NAME <span class="badge badge-danger">Mandatory</span></label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="(Example) Takashi Natsume" required>
+        </div>
+
+        <!-- Tel -->
+        <div class="form-group">
+          <label for="tel">TEL<span class="badge badge-danger">Mandatory</span></label>
+          <input type="text" id="tel" name="tel" class="form-control" placeholder="111-1111-111" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">E-MAIL<span class="badge badge-danger">Mandatory</span></label>
+          <input type="text" id="email" name="email" class="form-control" placeholder="info@example.com" required>
+          <input type="text" class="form-control" placeholder="confirm" required>
+        </div>
+
+        <!-- Job -->
+        <div class="form-group">
+          <label for="job">OCCUPATION</label>
+          <select id="job" name="job" class="form-control">
+            <option value="">Please select below</option>
+            <option value="会社員">Full time worler</option>
+            <option value="学生">Student</option>
+            <option value="その他">Else</option>
+          </select>
+        </div>
+
+        <!-- 知りたい内容 -->
+        <div class="form-group">
+          <label for="">Consent you want to know (multiple)</label>
+          <div class="form-check">
+            <input type="checkbox" name="q1" id="q1_1" value="ticket" class="form-check-input">
+            <label for="q1_1" class="form-check-label">Ticket for concert</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="q1" id="q1_2" value="goods" class="form-check-input">
+            <label for="q1_2" class="form-check-label">About goods you ordered</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="q1" id="q1_3" value="tv series" class="form-check-input">
+            <label for="q1_3" class="form-check-label">New TV series</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="q1" id="q1_4" value="else" class="form-check-input">
+            <label for="q1_4" class="form-check-label">Else</label>
+            <input type="text" class="form-control" placeholder="※Else">
+          </div>
+        </div>
+
+       
+        <!-- 問い合わせ内容 / inquiry -->
+        <div class="form-group">
+          <label for="message" class="d-block">INQUIRY<span class="badge badge-danger">Mandatory</span></label>
+          <textarea name="message" id="message" rows="10" class="form-control" required></textarea>
+        </div>
+        
+        <!-- Personal Information -->
+        <div class="form-group">
+          <h3>■Consent for the treatment of personal data</h3>
+          <p>AnimeJapan recognizes that your personal information is important and constitutes your privacy. When dealing with personal information in business, we will obey the laws, social ethics, and regulations that conforms to the international standard to ensure the security of your personal information. In addition, we will make sure every related member is aware of the regulations and acts accordingly to our privacy policy.
+            Click here for the <a href="https://anime-japan.jp/en/privacy_policy/">AnimeJapan privacy policy.</a></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+</div>
+  <hr>
+  
+  
+  <div class="footer-container">
+      <footer>
+        &copyNatsume.Japan
+      </footer>
+  </div>
+</body>
+</html>
