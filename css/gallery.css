@@ -130,3 +130,9 @@ body
   color: white;
   font-size: 50px;
 }
+
+@media (max-width: 699px) {
+  ul {
+    display: none;
+  }
+}
