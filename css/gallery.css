@@ -8,6 +8,43 @@ html {
   font-size: 62.5%;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(66, 66, 66);
+}
+/*-----------------------
+header
+------------------------*/
+
+#header_container {
+  /* border: 1px solid red; */
+  background-image: url(../img/background03.jpeg);
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0.1rem 0.1rem 0.5rem rgb(80, 96, 99);
+  background-blend-mode: lighten;
+  display: flex;
+  justify-content: space-between;
+}
+#header_container img {
+  /* border: 1px solid red; */
+  width: 20rem;
+  height: 100%;
+  margin-left: 3rem;
+}
+
+li {
+  list-style: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+  float: left;
+  padding: 3rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+/*-----------------------
+body
+------------------------*/
 .slideshow-wrapper {
   width: 100%;
   height: 100vh;
@@ -45,7 +82,7 @@ html {
   display: flex;
   justify-content:center;
   align-items: center;
-  transition: opacity 0.5s linear;
+  transition: opacity 1.5s linear;
 }
 
 .control:hover {
@@ -83,7 +120,7 @@ html {
 
 .play-pause {
   position: absolute;
-  bottom: 5%;
+  bottom: 13%;
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
