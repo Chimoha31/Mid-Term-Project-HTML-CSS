@@ -138,6 +138,24 @@ audio {
   right: 0;
 }
 
+.skip p {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color:rgba(214, 226, 226, 0.521);
+  border-radius: 15px;
+  padding: 2px 20px;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  box-shadow: 0.1rem 0.1rem 0.4rem rgb(121, 120, 120);
+}
+.skip p:hover {
+  background-color:rgba(214, 226, 226, 0.849);
+}
+
+.skip a {
+  color: #fff;
+}
+
 @media (max-width: 699px) {
   .pic01 img,
   .pic03 img {
