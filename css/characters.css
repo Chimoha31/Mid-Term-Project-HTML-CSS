@@ -9,6 +9,7 @@ body {
   height: 100vh;
   box-sizing: border-box;
   background-color: rgba(226, 224, 224, 0.205);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 a {
@@ -35,10 +36,8 @@ header
   margin-left: 3rem;
 }
 
-li {
+#header_container li {
   list-style: none;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-  "Lucida Sans", Arial, sans-serif;
   float: left;
   padding: 3rem;
   cursor: pointer;
@@ -48,6 +47,11 @@ li {
 /*-----------------------
 body
 ------------------------*/
+.mobile_characters_skip {
+  display: none;
+}
+
+
 .slide {
   background: linear-gradient(#eb9983d2, #f1b46dde);
   width: 100%;
@@ -62,7 +66,6 @@ body
 
 .slide p {
   color: rgb(97, 96, 96);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   display: inline-block;
   padding-left: 100%;
   white-space: nowrap;
@@ -357,29 +360,28 @@ footer {
 }
 
 .sns {
-  width: 80%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.all p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: center;
-  font-size: 1.8rem;
-  margin: 1rem;
-}
-
 .all i {
-  margin-right: 0.5rem;
+  width: 100%;
+  height: 100%; 
   color: #fff;
-  font-size: 2.2rem;
+  display: block;
+  font-size: 3.3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
 .all {
-  width: 15rem;
-  border-radius: 20px;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
   box-shadow: 0.2rem 0.2rem 0.3rem rgb(95, 94, 94);
 }
 
@@ -398,9 +400,36 @@ footer {
   background: linear-gradient(-135deg, #e79f5c, #cf3acf);
 }
 
-@media (max-width: 699px) {
-  #header_container li {
+
+@media (max-width: 599px) {
+  #header_container img {
     display: none;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  .mobile_characters_skip {
+    display: block;
+    width: 100%;
+  }
+  
+  .characters {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }  
+  
+  .group {
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  .characters p {
+    font-size: 1.5rem;
+    font-weight: 300;
   }
 
   #modal,
@@ -449,11 +478,4 @@ footer {
     align-items: center;
   }
 
-  .all {
-    margin: 0.3rem;
-  }
-  
-  .sns {
-    flex-direction: column;
-  }
 }
